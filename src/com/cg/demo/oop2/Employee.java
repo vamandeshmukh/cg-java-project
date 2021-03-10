@@ -10,8 +10,14 @@ class Employee {
 		System.out.println("default constructor");
 	}
 
+	public Employee(int id, String name) {
+		System.out.println("two parameterized constructor");
+		this.id = id;
+		this.name = name;
+	}
+
 	public Employee(int id, String name, double salary) {
-		System.out.println("parameterized constructor");
+		System.out.println("three parameterized constructor");
 		this.id = id;
 		this.name = name;
 		this.salary = salary;

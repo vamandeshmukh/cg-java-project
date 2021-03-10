@@ -30,6 +30,8 @@ public class App {
 		Employee emp3 = new Employee(103, "Ponu", 15.50);
 		System.out.println(emp3.toString());
 		
+		Employee emp4 = new Employee(104, "Gonu");
+		System.out.println(emp4.toString());
 		
 
 	}
