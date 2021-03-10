@@ -5,6 +5,8 @@ public class BankCustomer {
 	// non static (fields and methods) - restricted access (object reference)
 	// static (fields and methods) - free access (class reference)
 
+	
+	
 	static int bankPhone;
 	static String ifsc;
 	int acNo;
@@ -12,6 +14,8 @@ public class BankCustomer {
 	double balance;
 	long phone;
 
+	// 1. complete the following code 
+	
 	void withdraw() {
 		System.out.println("withdraw");
 	}
