@@ -6,6 +6,14 @@ class Employee {
 	String name;
 	double salary;
 
+	static {
+		System.out.println("static block");
+	}
+
+	{
+		System.out.println("non static block");
+	}
+
 	public Employee() {
 		System.out.println("default constructor");
 	}
@@ -31,5 +39,5 @@ class Employee {
 	public String toString() {
 		return "Employee [id=" + id + ", name=" + name + ", salary=" + salary + "]";
 	}
-
+	
 }
