@@ -7,10 +7,17 @@ class Employee {
 	double salary;
 
 	public Employee() {
-		System.out.println("Constructor");
+		System.out.println("default constructor");
 	}
 
-	void work() {
+	public Employee(int id, String name, double salary) {
+		System.out.println("parameterized constructor");
+		this.id = id;
+		this.name = name;
+		this.salary = salary;
+	}
+
+	public void work() {
 		System.out.println("Employee works...");
 	}
 
