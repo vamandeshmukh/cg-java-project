@@ -5,10 +5,12 @@ public class BankCustomer {
 	// non static (fields and methods) - restricted access (object reference)
 	// static (fields and methods) - free access (class reference)
 
-	static int ifsc;
+	static int bankPhone;
+	static String ifsc;
 	int acNo;
 	String name;
 	double balance;
+	long phone;
 
 	void withdraw() {
 		System.out.println("withdraw");
@@ -25,14 +27,6 @@ public class BankCustomer {
 
 	static void openAccount() {
 		System.out.println("openAccount");
-	}
-
-	public static void main(String[] args) {
-		ifsc = 10;
-//		acNo = 10; 
-		openAccount();
-		BankCustomer obj = new BankCustomer();
-		obj.withdraw(); 
 	}
 
 }
