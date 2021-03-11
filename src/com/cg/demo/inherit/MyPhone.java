@@ -25,9 +25,16 @@ class FeaturePhone extends Phone {
 }
 
 class SmartPhone extends FeaturePhone {
+
 	void camera() {
 		System.out.println("Taking pics...");
 	}
+
+	@Override
+	void music() {
+		System.out.println("Playing dolby music...");
+	}
+
 }
 
 public class MyPhone {
