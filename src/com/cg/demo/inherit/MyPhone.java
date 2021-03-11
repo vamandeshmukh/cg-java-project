@@ -24,6 +24,12 @@ class FeaturePhone extends Phone {
 	}
 }
 
+class SmartPhone extends FeaturePhone {
+	void camera() {
+		System.out.println("Taking pics...");
+	}
+}
+
 public class MyPhone {
 
 	public static void main(String[] args) {
@@ -37,6 +43,13 @@ public class MyPhone {
 		featurePhone.sms();
 		featurePhone.torch();
 		featurePhone.music();
+
+		SmartPhone smartPhone = new SmartPhone();
+		smartPhone.call();
+		smartPhone.sms();
+		smartPhone.torch();
+		smartPhone.music();
+		smartPhone.camera();
 
 	}
 
