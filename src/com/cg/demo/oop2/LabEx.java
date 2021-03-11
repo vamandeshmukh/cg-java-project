@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class LabEx {
 
 	String[] sortStrings(String[] str) {
+
 		System.out.println(str);
 		Arrays.sort(str);
 		System.out.println(str);
@@ -15,7 +16,7 @@ public class LabEx {
 	public static void main(String[] args) {
 		LabEx obj = new LabEx();
 		// String array 
-		obj.sortStrings(str);
+//		obj.sortStrings(str);
 
 	}
 
