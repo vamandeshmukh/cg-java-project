@@ -52,7 +52,6 @@ interface Int3 {
 }
 
 interface Int4 {
-	boolean m1();
 
 	public default void aDefaultMethod() {
 		System.out.println("Int4.aDefaultMethod();");
@@ -71,7 +70,7 @@ class Class5 implements Int3, Int4 {
 		Int3.super.aDefaultMethod();
 //		Int4.super.aDefaultMethod(); // 
 	}
-	
+
 	public static void main(String[] args) {
 		Class5 obj = new Class5();
 		obj.m1();
@@ -79,9 +78,9 @@ class Class5 implements Int3, Int4 {
 	}
 
 	@Override
-	public boolean m1() {
+	public int m1() {
 		// TODO Auto-generated method stub
-		return false;
+		return 0;
 	}
 
 }
