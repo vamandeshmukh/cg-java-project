@@ -8,11 +8,10 @@ public class App6 {
 
 			@Override
 			public void functionalMethod() {
-				// TODO Auto-generated method stub
+				System.out.println("functionalMethod");
 			}
 		};
 		obj.aDefaultMethod();
 		obj.anotherDefaultMethod();
 	}
-
 }

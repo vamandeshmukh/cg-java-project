@@ -4,7 +4,7 @@ class AnotherClass implements FunIn {
 
 	@Override
 	public void functionalMethod() {
-		// TODO Auto-generated method stub
+		System.out.println("functionalMethod");
 	}
 
 //	@Override
