@@ -4,7 +4,8 @@ abstract class AbstractClass {
 
 	abstract void abstractMethod(); // no method body 
 
-	void concreteMethod() {
+	void concreteMethod() // What to do? 
+	{					// How to do it? 
 		System.out.println("concreteMethod");
 	}
 }
@@ -15,7 +16,6 @@ class ConcreteClass extends AbstractClass {
 	void abstractMethod() {
 		System.out.println("abstractMethod has been implemented.");
 	}
-
 }
 
 public class AbsDemo {
