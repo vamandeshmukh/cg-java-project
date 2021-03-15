@@ -52,3 +52,26 @@ class Two extends One {
 	// main
 
 }
+
+
+class Three {
+	static void m1() {
+		// 
+	}	
+}
+
+class Four extends Three {
+	
+	public static void main(String[] args) {
+		
+		Four obj = new Four();
+		obj.m1();
+		Four.m1();
+		
+		
+	}
+	
+}
+
+
+
