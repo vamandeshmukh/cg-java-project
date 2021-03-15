@@ -13,6 +13,13 @@ package com.cg.demo.inherit;
  * 
  */
 
+/**
+ * interface - 
+ * it has the keyword interface 
+ * it can contain abstract methods 
+ * by default, methods in interface are public and abstract 
+ * java 8 onwards it can also contain concrete methods (default methods and static methods)
+ */
 
 abstract class AbstractClass {
 

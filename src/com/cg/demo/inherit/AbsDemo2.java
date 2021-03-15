@@ -2,17 +2,23 @@ package com.cg.demo.inherit;
 
 abstract class Rbi {
 
+	public Rbi() {
+		super();
+		System.out.println("Rbi constructor");
+	}
+
 	abstract void doKyc();
 
 }
 
 interface FinanceMinistry {
-	abstract void payTax();
+//	public abstract void payTax();
+	void payTax(); // same as above 
 
 }
 
 interface StateGovt {
-	abstract void followLaborLaws();
+	public abstract void followLaborLaws();
 
 }
 
@@ -20,7 +26,7 @@ class Hdfc extends Rbi implements FinanceMinistry, StateGovt {
 
 	@Override
 	void doKyc() {
-		System.out.println("Get Aaadhaar");
+		System.out.println("HDFC - Get Aaadhaar");
 	}
 
 	@Override
@@ -32,13 +38,24 @@ class Hdfc extends Rbi implements FinanceMinistry, StateGovt {
 	public void payTax() {
 		System.out.println("Hdfc pays tax");
 	}
+
 }
 
-class Sbi extends Rbi {
+class Sbi extends Rbi implements FinanceMinistry, StateGovt {
 
 	@Override
 	void doKyc() {
-		System.out.println("Get PAN Card");
+		System.out.println("SBI - Get PAN Card");
+	}
+
+	@Override
+	public void followLaborLaws() {
+		System.out.println("SBI follows labor laws");
+	}
+
+	@Override
+	public void payTax() {
+		System.out.println("SBI pays tax");
 	}
 }
 
@@ -54,6 +71,12 @@ public class AbsDemo2 {
 		sbi.doKyc();
 //		Rbi obj = new Hdfc(); 
 //		obj.doKyc();
+		
+//		Comparable 
+//		Runnable 
+//		Serializable 
+		
+		
 
 	}
 
