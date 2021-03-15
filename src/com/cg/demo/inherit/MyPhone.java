@@ -4,16 +4,26 @@ package com.cg.demo.inherit;
 
 class Phone {
 
+	public Phone() {
+		super();
+		System.out.println("Phone");
+	}
+
 	void call() {
 		System.out.println("Callling...");
 	}
 
 	void sms() {
-		System.out.println("sending SMS...");
+		System.out.println("Sending SMS...");
 	}
 }
 
 class FeaturePhone extends Phone {
+
+	public FeaturePhone() {
+		super();
+		System.out.println("FeaturePhone");
+	}
 
 	void torch() {
 		System.out.println("Flashing torch...");
@@ -25,6 +35,11 @@ class FeaturePhone extends Phone {
 }
 
 class SmartPhone extends FeaturePhone {
+
+	public SmartPhone() {
+		super();
+		System.out.println("SmartPhone");
+	}
 
 	void camera() {
 		System.out.println("Taking pics...");
@@ -41,15 +56,15 @@ public class MyPhone {
 
 	public static void main(String[] args) {
 
-		Phone phone = new Phone();
-		phone.call();
-		phone.sms();
-
-		FeaturePhone featurePhone = new FeaturePhone();
-		featurePhone.call();
-		featurePhone.sms();
-		featurePhone.torch();
-		featurePhone.music();
+//		Phone phone = new Phone();
+//		phone.call();
+//		phone.sms();
+//
+//		FeaturePhone featurePhone = new FeaturePhone();
+//		featurePhone.call();
+//		featurePhone.sms();
+//		featurePhone.torch();
+//		featurePhone.music();
 
 		SmartPhone smartPhone = new SmartPhone();
 		smartPhone.call();
