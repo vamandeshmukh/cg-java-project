@@ -32,17 +32,17 @@ public class ObjectDemo {
 		CollegeOne student1 = new CollegeOne();
 		student1.getAdmission();
 //		student1 = new CollegeTwo();
+//		student1 = new CollegeTwo();
 
-		//		CollegeTwo student2 = new CollegeTwo();
-//		student2.getAdmission();
+		University student2 = new CollegeTwo();
+		student2.getAdmission();
 
-		University student3 = new CollegeOne(); // compare line 32 
+		University student3 = new CollegeOne(); // compare line 32
 		student3.getAdmission();
-		student3 = new CollegeTwo(); // compare line 34 
+//		student3 = student2; 
+		student3 = new CollegeTwo();// compare line 34
 		student3.getAdmission();
-		
-		
-		
+		student3 = new CollegeOne();
 
 	}
 
