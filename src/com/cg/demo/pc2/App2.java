@@ -2,7 +2,7 @@ package com.cg.demo.pc2;
 
 import com.cg.demo.pc1.Employee;
 
-public class App2 {
+public class App2 extends Employee {
 
 	public static void main(String[] args) {
 		Employee emp = new Employee();
@@ -11,5 +11,4 @@ public class App2 {
 //		System.out.println(emp.packageMember);
 //		System.out.println(emp.privateMember);
 	}
-
 }

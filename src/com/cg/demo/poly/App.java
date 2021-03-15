@@ -2,13 +2,13 @@ package com.cg.demo.poly;
 
 // polymorphism - methods with the same name work differently 
 // overloading , overriding 
-// overriding - 
-// method from a super class is overridden with a diferent implementation in sub-class. 
+// method overriding - (runtime polymorphism) 
+// method from a super class is overridden with a different implementation in sub-class. 
 // possible in non static context 
 
-// overloading - 
-// methods with same name but with different parameters 
-// possible in static / non static context 
+// method overloading - (compile time polymorphism)  
+// methods with the same name but with different parameters 
+// possible in static / non static contexts 
 
 class Parent {
 
@@ -37,3 +37,4 @@ public class App {
 	}
 
 }
+
