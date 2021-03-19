@@ -87,10 +87,11 @@ public class App {
 		Stream<Employee> empWithMoreSal = empList.stream().filter(emp -> emp.salary > 15000);
 		empWithMoreSal.forEach(emp -> System.out.println(emp.toString()));
 
-
-		empList.stream().filter(emp -> emp.salary > 15000).forEach(emp -> System.out.println(emp.toString()));
-		
-		
+		System.out.println("-------------");
+//		empList.stream().filter(emp -> emp.salary > 15000).forEach(emp -> System.out.println(emp.toString()));
+//		empList.stream().limit(4).forEach(emp -> System.out.println(emp.toString()));
+//		empList.stream().skip(2).limit(2).forEach(emp -> System.out.println(emp.toString())); 
+		empList.stream().filter(emp -> emp.name.charAt(0) == 'S').forEach(emp -> System.out.println(emp.toString()));
 
 	}
 }
