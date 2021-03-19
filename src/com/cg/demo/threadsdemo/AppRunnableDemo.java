@@ -21,10 +21,10 @@ public class AppRunnableDemo implements Runnable {
 	public static void main(String[] args) {
 		System.out.println("Start");
 
-		App obj = new App();
+		AppRunnableDemo obj = new AppRunnableDemo();
 		Thread threadObj = new Thread(obj);
 
-		App obj2 = new App();
+		AppRunnableDemo obj2 = new AppRunnableDemo();
 		Thread threadObj2 = new Thread(obj2);
 
 		threadObj.start();

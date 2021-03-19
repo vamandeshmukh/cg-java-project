@@ -27,5 +27,7 @@ public class App extends Thread {
 //		obj2.printLoop();
 		obj.start();
 		obj2.start();
+//		obj.run();
+//		obj2.run();
 	}
 }
