@@ -23,10 +23,13 @@ public class App extends Thread {
 
 		App obj = new App();
 		App obj2 = new App();
+		App obj3 = new App();
 //		obj.printLoop();
 //		obj2.printLoop();
 		obj.start();
+		obj.printLoop();
 		obj2.start();
+		obj3.start();
 //		obj.run();
 //		obj2.run();
 	}

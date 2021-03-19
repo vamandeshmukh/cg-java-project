@@ -18,17 +18,17 @@ public class AppRunnableDemo implements Runnable {
 		}
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		System.out.println("Start");
 
-		AppRunnableDemo obj = new AppRunnableDemo();
-		Thread threadObj = new Thread(obj);
-
-		AppRunnableDemo obj2 = new AppRunnableDemo();
-		Thread threadObj2 = new Thread(obj2);
+		Thread threadObj = new Thread(new AppRunnableDemo());
+		Thread threadObj2 = new Thread(new AppRunnableDemo());
+		Thread threadObj3 = new Thread(new AppRunnableDemo());
 
 		threadObj.start();
+		threadObj.join();
 		threadObj2.start();
+		threadObj3.start();
 
 	}
 }
