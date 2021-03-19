@@ -12,7 +12,8 @@ public class App {
 
 	public static void main(String[] args) throws IOException {
 
-		Path filePath = Paths.get("myFile.txt");
+		Path filePath = Paths.get("e://myFolder//myFile.txt");
+//		Path filePath = Paths.get("myFile.txt");
 		InputStream is = Files.newInputStream(filePath);
 		InputStreamReader isr = new InputStreamReader(is);
 		BufferedReader br = new BufferedReader(isr);

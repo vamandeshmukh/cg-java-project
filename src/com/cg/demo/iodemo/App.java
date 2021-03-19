@@ -15,6 +15,7 @@ public class App {
 		Employee obj = new Employee(sc.nextInt(), sc.next(), sc.nextDouble());
 		System.out.println(obj.toString());
 
+//		FileOutputStream fos = new FileOutputStream("E:\\myFolder\\emp2.ser");
 		FileOutputStream fos = new FileOutputStream("emp2.ser");
 		ObjectOutputStream oos = new ObjectOutputStream(fos);
 		oos.writeObject(obj);
