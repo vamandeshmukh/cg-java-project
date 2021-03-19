@@ -1,6 +1,6 @@
 package com.cg.demo.threadsdemo;
 
-public class App extends Thread {
+public class AppRunnableDemo implements Runnable {
 
 	@Override
 	public void run() {
@@ -22,10 +22,13 @@ public class App extends Thread {
 		System.out.println("Start");
 
 		App obj = new App();
+		Thread threadObj = new Thread(obj);
+
 		App obj2 = new App();
-//		obj.printLoop();
-//		obj2.printLoop();
-		obj.start();
-		obj2.start();
+		Thread threadObj2 = new Thread(obj2);
+
+		threadObj.start();
+		threadObj2.start();
+
 	}
 }
