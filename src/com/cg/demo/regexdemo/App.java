@@ -3,7 +3,6 @@ package com.cg.demo.regexdemo;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-//https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html
 
 public class App {
 
