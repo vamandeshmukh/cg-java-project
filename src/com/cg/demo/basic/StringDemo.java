@@ -14,7 +14,7 @@ public class StringDemo {
 		System.out.println(str);
 		System.out.println(str2);
 
-		System.out.println(str.charAt(2)); // c
+		System.out.println(str.charAt(2)); // customer
 		System.out.println(str.length()); // 3
 		System.out.println(str.equals(str3)); // false 
 		System.out.println(str == str3);
