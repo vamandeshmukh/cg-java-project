@@ -18,5 +18,4 @@ public class ProblemsInRunnable implements Runnable {
 			thread.start();
 		}
 	}
-
 }

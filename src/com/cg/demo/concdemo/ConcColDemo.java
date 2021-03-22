@@ -12,8 +12,8 @@ public class ConcColDemo implements Runnable {
 	@Override
 	public void run() {
 		System.out.println("run");
-		for (int i = 0; i <= 10; i++) {
-			arryList.add(i);
+		for (int i = 1; i <= 10; i++) {
+			this.arryList.add(i);
 			try {
 				Thread.sleep(10);
 			} catch (InterruptedException e) {
@@ -37,6 +37,7 @@ public class ConcColDemo implements Runnable {
 		for (Integer i : ccd.arryList) {
 			System.out.println(i);
 		}
+		System.out.println(ccd.arryList);
 
 	}
 }

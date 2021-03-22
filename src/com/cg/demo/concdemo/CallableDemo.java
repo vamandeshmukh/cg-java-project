@@ -7,6 +7,9 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 // Callable solves problem of Runnable using Future object 
+// Callable -> 
+
+//https://stackoverflow.com/questions/17262327/threadpoolexecutor-differences-between-submit-and-execute-methods
 
 public class CallableDemo implements Callable<Integer> {
 
@@ -23,9 +26,10 @@ public class CallableDemo implements Callable<Integer> {
 		CallableDemo mt1 = new CallableDemo();
 
 		ExecutorService executorService = Executors.newSingleThreadExecutor();
-		Future<Integer> future = executorService.submit(mt1);
 
+		Future<Integer> future = executorService.submit(mt1);
 		Integer total = future.get();
+
 		System.out.println(total);
 		executorService.shutdown();
 	}

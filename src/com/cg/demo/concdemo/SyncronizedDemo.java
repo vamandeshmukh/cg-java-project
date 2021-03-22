@@ -6,7 +6,7 @@ public class SyncronizedDemo implements Runnable {
 
 	@Override
 	public void run() {
-		for (int i = 1; i <= 5; i++) {
+		for (int i = 1; i <= 2; i++) {
 			total += i;
 		}
 	}
@@ -20,11 +20,11 @@ public class SyncronizedDemo implements Runnable {
 		System.out.println(sync.total);
 	}
 
-//	public int getTotal() {
+//	public synchronized int getTotal() {
 //		return total;
 //	}
 //
-//	public void setTotal(int total) {
+//	public synchronized void setTotal(int total) {
 //		this.total = total;
 //	}
 }
